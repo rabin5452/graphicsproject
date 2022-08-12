@@ -26,17 +26,13 @@ def draw(s,j,colors):
         post_y=-100
     if s=='1':
         draw_ui.penup()
-        draw_ui.goto(post_x,post_y)
+        draw_ui.goto(post_x+25,post_y+75)
         draw_ui.pendown()
-        draw_ui.fd(100)
-        draw_ui.backward(50)
-        draw_ui.left(90)
-        draw_ui.fd(100)
-        draw_ui.right(45)
-        draw_ui.fd(-50)
-        draw_ui.penup()
+        draw_ui.goto(post_x+50,post_y+100)
+        draw_ui.goto(post_x+50,post_y)
         draw_ui.goto(post_x,post_y)
-        draw_ui.left(-45)
+        draw_ui.goto(post_x+100,post_y)
+       
     elif s=='2':
         draw_ui.penup()
         draw_ui.goto(post_x,post_y)
